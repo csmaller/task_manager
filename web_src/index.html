@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+
+  <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+      <!-- 3RD PARTY -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+      <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.min.js"></script>
+
+      
+      <!-- APP -->
+      <script src="dist/starter.js"></script>
+      <script src="dist/templates.js"></script>
+      <!--CSS-->
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="dist/starter.css" />
+  </head>
+
+  <body>
+      <header>
+      <!-- SOME STATIC HEADER CONTENT -->
+      <!-- NAVIGATION -->
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="/">Tasks</a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section class="main">
+      <!-- <div ng-controller="UserController as vm">
+        {{vm.test}}
+
+      </div> -->
+
+      <div ui-view class='centered_div'></div>
+        
+    </section>
+
+    <footer>
+      <!-- FOOTER INFO HERE IF WE WANT
+    </footer>
+  </body>
+
+
+
+</html>

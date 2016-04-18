@@ -1,0 +1,38 @@
+<div>
+	
+	<form name="vm.form" novalidate class='form-vertical'>
+        <div class="add_task">
+			<div >
+	        	<span class="taskLabel">Add Task</span>
+	        	<span class="required">*</span>
+	        </div>
+	        <div >
+		        <input type="text" name="task" ng-model="vm.task.task" required class="form-control " />
+			
+		        <button type="submit" class="btn btn-success" ng-click="vm.submit();">ADD</button>
+	        </div>
+                   
+		</div>
+    </form>
+</div>
+<div class='task_list'>
+	<div >
+	    <span class="taskLabel ">Tasks</span>
+	</div>
+	<table >
+		<thead>
+			<th>Id</th>
+			<th>Task</th>
+			<th>Delete</th>
+		</thead>
+		<tr ng-repeat = "x in vm.tasks track by $index">
+			<td>{{x.id}}</td>
+			<td>{{x.task}}</td>
+			<td><button class="small_btn btn btn-danger" ng-click="vm.delete(x.id)">X</button>
+		</tr>
+	</table>
+
+</div>
+
+
+        
